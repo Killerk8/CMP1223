@@ -25,7 +25,7 @@ public class ValidacaoCartao {
 	               num.startsWith("55")) {
 	    	 bandeira = "MASTERCARD";
 	    } else if (num.startsWith("4")) {
-	    	 bandeira = "VISA";
+	    	 bandeira = "VISA.";
 	    } 
 	      
 	    while (numero > 0) {
