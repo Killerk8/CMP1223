@@ -2,11 +2,41 @@ package NOOBank;
 
 public class Conta {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println('A');
-		System.out.println('B');
-		System.out.println('teste xd');
+	private double valor;
+	private double saldo;
+	
+	public Conta (){
+		double saldo = 0;
+	}
+	
+	public Conta(double depositoInicial) {}
+		
+	
+	public void depositar(double valor) {
+		
+	}
+	
+	public double sacar(double valor) {
+		if (valor < saldo)
+			return saldo;
+		else
+			return saldo-valor;
+	}
+	
+	public double getSaldo() {
+		
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {	
 
 	}
 
