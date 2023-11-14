@@ -36,6 +36,20 @@ public class Main {
 		System.out.println("Valor sacado: " + ct2.sacar(200));
 		System.out.println("Saldo após o saque: " + ct2.getSaldo());
 		ct2.aplicarJuros();
-	}
+		
+		System.out.println();
+		
+		ContaAplicacao ct3 = new ContaAplicacao(2000,"Jairo",789,true,5);
+		System.out.println("Nome do titular da conta: " + ct3.getNome());
+		System.out.println("Numero da conta: " + ct3.getNumero());
+		System.out.println("Tipo de conta: " + ct3.getTipo());
+		System.out.println("Saldo inicial da conta: " + ct3.getSaldo());
+		ct3.depositar(100);
+		System.out.println("Valor total: " + ct3.getSaldo());
+		ct3.vencida();		
+		ct3.sacar(1100);
+		System.out.println("Valor após o saldo: " + ct3.getSaldo());
 
+
+	}
 }
