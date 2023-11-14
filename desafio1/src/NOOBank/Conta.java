@@ -29,11 +29,11 @@ public class Conta {
 	}
 	
 	public double getSaldo() {
-		return saldo;
+		return this.saldo;
 	}
 	
-	public double setSaldo(double saldo) {
-		return this.saldo = saldo;
+	protected void setSaldo(double saldo) {
+		this.saldo = saldo;
 	}
 	
 	

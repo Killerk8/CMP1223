@@ -7,6 +7,9 @@ public class Main {
 		Conta ct = new Conta();
 		
 		System.out.println(ct.getSaldo());
+		ct.depositar(10);
+		System.out.println(ct.sacar(3));
+		System.out.println(ct.getSaldo());
 		
 		System.out.println("Conta criada com saldo de: " + ct1.getSaldo());
 		ct1.depositar(10);
