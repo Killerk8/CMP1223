@@ -3,7 +3,6 @@ package NOOBank;
 public class ContaAplicacao extends Conta{
 	private double taxaJuros;
 	private boolean estaVencida;
-	private double saldo;
 	
 	public ContaAplicacao(double depositoInicial, String nome, int numero, boolean estaVencida, double taxaJuros) {
 		 setSaldo(depositoInicial);

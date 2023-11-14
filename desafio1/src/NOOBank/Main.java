@@ -47,9 +47,30 @@ public class Main {
 		ct3.depositar(100);
 		System.out.println("Valor total: " + ct3.getSaldo());
 		ct3.vencida();		
-		ct3.sacar(1100);
+		System.out.println("Valor do saque: " + ct3.sacar(1100)); 
 		System.out.println("Valor após o saldo: " + ct3.getSaldo());
 
-
+		System.out.println();
+		
+		ContaSalario ct4 = new ContaSalario("Roberto",159,3,5,20);
+		System.out.println("Nome do titular da conta: " + ct4.getNome());	
+		System.out.println("Numero da conta: " + ct4.getNumero());
+		System.out.println("Tipo de conta: " + ct4.getTipo());
+		System.out.println("Valor da taxa: " + ct4.getTaxa());
+		System.out.println("Cotas de transações: " + ct4.getCotasMensais());
+		System.out.println("Quantidade de transações realizadas: " + ct4.getQtdTransacoes());
+		ct4.calcularTaxas();
+		
+		System.out.println();
+		
+		ContaEspecial ct5 = new ContaEspecial(500,"Denis",357,20);
+		System.out.println("Nome do titular da conta: " + ct5.getNome());
+		System.out.println("Numero da conta: " + ct5.getNumero());
+		System.out.println("Tipo de conta: " + ct5.getTipo());
+		System.out.println("Saldo da conta: " + ct5.getSaldo());
+		System.out.println("Valor do saque: " + ct5.sacar(950));
+		System.out.println("Saldo da conta após o saque: " + ct5.getSaldo());
+		System.out.println("Sera cobrado uma taxa de " + ct5.getTaxaCredito() + "%");
+		ct5.cobrarJuros();
 	}
 }
