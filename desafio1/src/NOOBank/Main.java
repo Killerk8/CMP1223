@@ -9,7 +9,6 @@ public class Main {
 		ct1.depositar(500);
 		System.out.println("Valor total: " + ct1.getSaldo());
 		
-		//ct1.sacar(300);
 		System.out.println("Valor sacado: " + ct1.sacar(100));
 		System.out.println("Saldo após o saque: " + ct1.getSaldo());
 	}
