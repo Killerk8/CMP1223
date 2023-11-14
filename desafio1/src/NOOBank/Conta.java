@@ -6,6 +6,7 @@ public class Conta {
 		// TODO Auto-generated method stub
 		System.out.println('A');
 		System.out.println('B');
+		System.out.println('teste vs');
 
 	}
 
