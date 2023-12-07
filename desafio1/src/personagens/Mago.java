@@ -23,6 +23,6 @@ public class Mago extends Personagem{
 	}
 	
 	public void lancarFeitiço() {
-		System.out.println("lançando feitiço.");
+		System.out.println("lançando feitiço.,");
 	}
 }
